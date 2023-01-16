@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/root.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./svg/coffee-cup.svg" />
+
+    <title>WeCode Coffe</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="cabecalho-navbar">
+        <div class="cabecalho-menu-lateral-btn-abre">
+          <img src="./svg/icon-header-menu.svg" alt="Menu" />
+        </div>
+        <nav class="cabecalho-menu-lateral">
+          <div class="cabecalho-menu-lateral-usuario">
+            <figure class="cabecalho-img-usuario">
+              <img
+                src="./img/Rectangle 73.png"
+                alt=""
+                class="cabecalho-menu-lateral-moldura-fundo"
+              />
+              <img
+                src="./img/Rectangle 74.png"
+                alt=""
+                class="cabecalho-menu-lateral-moldura-meio"
+              />
+            </figure>
+            <div class="cabecalho-menu-lateral-usuario-infos">
+              <div class="cabecalho-menu-lateral-usuario-texto">
+                <p class="cabecalho-menu-lateral-usuario-texto-inicio">Olá,</p>
+                <p class="cabecalho-menu-lateral-usuario-texto-final">
+                  Usuário.
+                </p>
+              </div>
+              <img
+                src="./svg/close.svg"
+                alt="Botão fechar"
+                class="cabecalho-menu-lateral-btn-fecha"
+              />
+            </div>
+          </div>
+          <ul class="cabecalho-menu-lateral-lista">
+            <li
+              class="cabecalho-menu-lateral-itens cabecalho-menu-lateral-primeiro-departamento"
+            >
+              <a href="#" class="cabecalho-menu-lateral-texto"
+                >Departamento 1</a
+              >
+              <ul
+                class="cabecalho-menu-lateral-sublista cabecalho-menu-lateral-primeiro-departamento-lista"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 3</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li
+              class="cabecalho-menu-lateral-itens cabecalho-menu-lateral-segundo-departamento"
+            >
+              <a href="#" class="cabecalho-menu-lateral-texto"
+                >Departamento 2</a
+              >
+              <ul
+                class="cabecalho-menu-lateral-sublista cabecalho-menu-lateral-segundo-departamento-lista"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 3</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li
+              class="cabecalho-menu-lateral-itens cabecalho-menu-lateral-terceiro-departamento"
+            >
+              <a href="#" class="cabecalho-menu-lateral-texto"
+                >Departamento 3</a
+              >
+              <ul
+                class="cabecalho-menu-lateral-sublista cabecalho-menu-lateral-terceiro-departamento-lista"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 3</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li
+              class="cabecalho-menu-lateral-itens cabecalho-menu-lateral-quarto-departamento"
+            >
+              <a href="#" class="cabecalho-menu-lateral-texto"
+                >Departamento 4</a
+              >
+              <ul
+                class="cabecalho-menu-lateral-sublista cabecalho-menu-lateral-quarto-departamento-lista"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 3</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li
+              class="cabecalho-menu-lateral-itens cabecalho-menu-lateral-quinto-departamento"
+            >
+              <a href="#" class="cabecalho-menu-lateral-texto"
+                >Departamento 5</a
+              >
+              <ul
+                class="cabecalho-menu-lateral-sublista cabecalho-menu-lateral-quinto-departamento-lista"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 3</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li
+              class="cabecalho-menu-lateral-itens cabecalho-menu-lateral-sexto-departamento"
+            >
+              <a href="#" class="cabecalho-menu-lateral-texto"
+                >Departamento 6</a
+              >
+              <ul
+                class="cabecalho-menu-lateral-sublista cabecalho-menu-lateral-sexto-departamento-lista"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-subitem-texto"
+                    >Categoria 3</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li
+              class="cabecalho-menu-lateral-itens cabecalho-menu-lateral-sair-border"
+            >
+              <a
+                href="#"
+                class="cabecalho-menu-lateral-texto cabecalho-menu-lateral-sair"
+                >Sair</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="cabecalho-navbar-logo">
+          <img src="./svg/logo-header-wecode.svg" alt="Logo da WeCode" />
+        </div>
+        <div class="cabecalho-direita-lista">
+          <div>
+            <img
+              src="./svg/icon-header-search.svg"
+              alt="Busca"
+              class="cabecalho-direita-item-lupa"
+            />
+          </div>
+
+          <div>
+            <img
+              src="./svg/icon-header-carrinho.svg"
+              alt="Carrinho de compras"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="cabecalho-direita-busca">
+        <div class="cabecalho-direita-busca-itens">
+          <input
+            type="text"
+            placeholder="Search..."
+            class="cabecalho-direita-busca-input"
+          />
+          <img
+            src="./svg/search-line.svg"
+            alt="buscar"
+            class="cabecalho-direita-busca-btn-buscar"
+          />
+          <img
+            src="./svg/close.svg"
+            alt="fechar"
+            class="cabecalho-direita-busca-btn-close"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="produtos-primeiro-carrossel">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="./img/Banner-home-principal-1.png"
+            alt=""
+            class="carrossel-img"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./img/Banner-home-principal-2.png"
+            alt=""
+            class="carrossel-img"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./img/Banner-home-principal-3.png"
+            alt=""
+            class="carrossel-img"
+          />
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </section>
+    <section class="departamentos">
+      <div class="departamento">
+        <img
+          src="./img/Banner-home-departamento-1.png"
+          alt="Imagem de departamento"
+        />
+        <p class="departamento-texto">Departamento 1</p>
+      </div>
+      <div class="departamento">
+        <img
+          src="./img/Banner-home-departamento-2.png"
+          alt="Imagem de departamento"
+        />
+        <p class="departamento-texto">Departamento 2</p>
+      </div>
+      <div class="departamento">
+        <img
+          src="./img/Banner-home-departamento-3.png"
+          alt="Imagem de departamento"
+        />
+        <p class="departamento-texto">Departamento 3</p>
+      </div>
+      <div class="departamento">
+        <img
+          src="./img/Banner-home-departamento-4.png"
+          alt="Imagem de departamento"
+        />
+        <p class="departamento-texto">Departamento 4</p>
+      </div>
+      <div class="departamento">
+        <img
+          src="./img/Banner-home-departamento-5.png"
+          alt="Imagem de departamento"
+        />
+        <p class="departamento-texto">Departamento 5</p>
+      </div>
+      <div class="departamento">
+        <img
+          src="./img/Banner-home-departamento-6.png"
+          alt="Imagem de departamento"
+        />
+        <p class="departamento-texto">Departamento 6</p>
+      </div>
+    </section>
+    <section class="produtos">
+      <p class="produtos-texto">Produtos mais vendidos</p>
+      <div class="produtos-carrossel">
+        <div class="swiper-wrapper">
+          <div class="produtos-carrossel-itens swiper-slide">
+            <img
+              src="./img/Imagem-home-produto-1.png"
+              alt="Copo médio de café"
+              class="produtos-carrossel-itens-img"
+            />
+
+            <div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-primeiro-texto"
+              >
+                <p>Copo de Macaccino</p>
+                <p class="produtos-itens-valor"><s>R$ 12</s></p>
+              </div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-segundo-texto"
+              >
+                <p>Médio - 550ml</p>
+                <p
+                  class="produtos-itens-valor produtos-itens-informacao-destaque"
+                >
+                  R$ 9,50
+                </p>
+              </div>
+            </div>
+            <div class="produtos-itens-informacoes-inferiores">
+              <p class="produtos-itens-informacoes-lancamento">Lançamento</p>
+              <img
+                src="./svg/icon-home-carddeproduto-addtocart.svg"
+                alt="Adicionar ao carrinho"
+              />
+            </div>
+          </div>
+          <div class="produtos-carrossel-itens swiper-slide">
+            <img
+              src="./img/Imagem-home-produto-2.png"
+              alt="Copo médio de café"
+              class="produtos-carrossel-itens-img"
+            />
+            <div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-primeiro-texto"
+              >
+                <p>Copo de Macaccino</p>
+                <p class="produtos-itens-valor"><s>R$ 9</s></p>
+              </div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-segundo-texto"
+              >
+                <p>Pequeno - 350ml</p>
+                <p
+                  class="produtos-itens-valor produtos-itens-informacao-destaque"
+                >
+                  R$ 7,50
+                </p>
+              </div>
+            </div>
+            <div class="produtos-itens-informacoes-inferiores-padrao">
+              <img
+                src="./svg/icon-home-carddeproduto-addtocart.svg"
+                alt="Adicionar ao carrinho"
+              />
+            </div>
+          </div>
+          <div class="produtos-carrossel-itens swiper-slide">
+            <img
+              src="./img/Imagem-home-produto-3.png"
+              alt="Copo médio de café"
+              class="produtos-carrossel-itens-img"
+            />
+            <div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-primeiro-texto"
+              >
+                <p>Copo de Macaccino</p>
+                <p class="produtos-itens-valor"><s>R$ 16</s></p>
+              </div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-segundo-texto"
+              >
+                <p>Grande - 750ml</p>
+                <p
+                  class="produtos-itens-valor produtos-itens-informacao-destaque"
+                >
+                  R$ 12,50
+                </p>
+              </div>
+            </div>
+            <div class="produtos-itens-informacoes-inferiores-padrao">
+              <img
+                src="./svg/icon-home-carddeproduto-addtocart.svg"
+                alt="Adicionar ao carrinho"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="link-informacao">
+      <div class="link-informacao-banner">
+        <img
+          src="./img/Banner-home-corpo-1.png"
+          alt=""
+          class="link-informacao-banner-img"
+        />
+        <a href="#" class="link-informacao-banner-link">Saiba mais!</a>
+      </div>
+      <div class="link-informacao-banner">
+        <img
+          src="./img/Banner-home-corpo-2.png"
+          alt=""
+          class="link-informacao-banner-img"
+        />
+        <a href="#" class="link-informacao-banner-link">Aproveite agora!</a>
+      </div>
+    </section>
+    <section class="produtos">
+      <p class="produtos-texto">Selecionado por nós</p>
+      <div class="produtos-carrossel">
+        <div class="swiper-wrapper">
+          <div class="produtos-carrossel-itens swiper-slide">
+            <img
+              src="./img/Imagem-home-produto-1.png"
+              alt="Copo médio de café"
+              class="produtos-carrossel-itens-img"
+            />
+            <div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-primeiro-texto"
+              >
+                <p>Copo de Macaccino</p>
+                <p class="produtos-itens-valor"><s>R$ 12</s></p>
+              </div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-segundo-texto"
+              >
+                <p>Médio - 550ml</p>
+                <p
+                  class="produtos-itens-valor produtos-itens-informacao-destaque"
+                >
+                  R$ 9,50
+                </p>
+              </div>
+            </div>
+            <div class="produtos-itens-informacoes-inferiores">
+              <p class="produtos-itens-informacoes-lancamento">Lançamento</p>
+              <img
+                src="./svg/icon-home-carddeproduto-addtocart.svg"
+                alt="Adicionar ao carrinho"
+              />
+            </div>
+          </div>
+          <div class="produtos-carrossel-itens swiper-slide">
+            <img
+              src="./img/Imagem-home-produto-2.png"
+              alt="Copo médio de café"
+              class="produtos-carrossel-itens-img"
+            />
+            <div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-primeiro-texto"
+              >
+                <p>Copo de Macaccino</p>
+                <p class="produtos-itens-valor"><s>R$ 9</s></p>
+              </div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-segundo-texto"
+              >
+                <p>Pequeno - 350ml</p>
+                <p
+                  class="produtos-itens-valor produtos-itens-informacao-destaque"
+                >
+                  R$ 7,50
+                </p>
+              </div>
+            </div>
+            <div class="produtos-itens-informacoes-inferiores-padrao">
+              <img
+                src="./svg/icon-home-carddeproduto-addtocart.svg"
+                alt="Adicionar ao carrinho"
+              />
+            </div>
+          </div>
+          <div class="produtos-carrossel-itens swiper-slide">
+            <img
+              src="./img/Imagem-home-produto-3.png"
+              alt="Copo médio de café"
+              class="produtos-carrossel-itens-img"
+            />
+            <div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-primeiro-texto"
+              >
+                <p>Copo de Macaccino</p>
+                <p class="produtos-itens-valor"><s>R$ 16</s></p>
+              </div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-segundo-texto"
+              >
+                <p>Grande - 750ml</p>
+                <p
+                  class="produtos-itens-valor produtos-itens-informacao-destaque"
+                >
+                  R$ 12,50
+                </p>
+              </div>
+            </div>
+            <div class="produtos-itens-informacoes-inferiores-padrao">
+              <img
+                src="./svg/icon-home-carddeproduto-addtocart.svg"
+                alt="Adicionar ao carrinho"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="link-informacao">
+      <div class="link-informacao-banner">
+        <img
+          src="./img/Banner-home-corpo-1.png"
+          alt=""
+          class="link-informacao-banner-img"
+        />
+        <a href="#" class="link-informacao-banner-link">Saiba mais!</a>
+      </div>
+    </section>
+    <section class="produtos">
+      <p class="produtos-texto">Exclusivos da loja online</p>
+      <div class="produtos-carrossel">
+        <div class="swiper-wrapper">
+          <div class="produtos-carrossel-itens swiper-slide">
+            <img
+              src="./img/Imagem-home-produto-1.png"
+              alt="Copo médio de café"
+              class="produtos-carrossel-itens-img"
+            />
+            <div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-primeiro-texto"
+              >
+                <p>Copo de Macaccino</p>
+                <p class="produtos-itens-valor"><s>R$ 12</s></p>
+              </div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-segundo-texto"
+              >
+                <p>Médio - 550ml</p>
+                <p
+                  class="produtos-itens-valor produtos-itens-informacao-destaque"
+                >
+                  R$ 9,50
+                </p>
+              </div>
+            </div>
+            <div class="produtos-itens-informacoes-inferiores">
+              <p class="produtos-itens-informacoes-lancamento">Lançamento</p>
+              <img
+                src="./svg/icon-home-carddeproduto-addtocart.svg"
+                alt="Adicionar ao carrinho"
+              />
+            </div>
+          </div>
+          <div class="produtos-carrossel-itens swiper-slide">
+            <img
+              src="./img/Imagem-home-produto-2.png"
+              alt="Copo médio de café"
+              class="produtos-carrossel-itens-img"
+            />
+            <div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-primeiro-texto"
+              >
+                <p>Copo de Macaccino</p>
+                <p class="produtos-itens-valor"><s>R$ 9</s></p>
+              </div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-segundo-texto"
+              >
+                <p>Pequeno - 350ml</p>
+                <p
+                  class="produtos-itens-valor produtos-itens-informacao-destaque"
+                >
+                  R$ 7,50
+                </p>
+              </div>
+            </div>
+            <div class="produtos-itens-informacoes-inferiores-padrao">
+              <img
+                src="./svg/icon-home-carddeproduto-addtocart.svg"
+                alt="Adicionar ao carrinho"
+              />
+            </div>
+          </div>
+          <div class="produtos-carrossel-itens swiper-slide">
+            <img
+              src="./img/Imagem-home-produto-3.png"
+              alt="Copo médio de café"
+              class="produtos-carrossel-itens-img"
+            />
+            <div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-primeiro-texto"
+              >
+                <p>Copo de Macaccino</p>
+                <p class="produtos-itens-valor"><s>R$ 16</s></p>
+              </div>
+              <div
+                class="produtos-itens-informacoes-superiores produtos-itens-segundo-texto"
+              >
+                <p>Grande - 750ml</p>
+                <p
+                  class="produtos-itens-valor produtos-itens-informacao-destaque"
+                >
+                  R$ 12,50
+                </p>
+              </div>
+            </div>
+            <div class="produtos-itens-informacoes-inferiores-padrao">
+              <img
+                src="./svg/icon-home-carddeproduto-addtocart.svg"
+                alt="Adicionar ao carrinho"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pagamento-carrossel">
+      <div class="swiper-wrapper pagamento-container">
+        <div class="swiper-slide pagamento-infos">
+          <img
+            src="./svg/icon-footer-card.svg"
+            alt="Cartão"
+            class="pagamento-img"
+          />
+          <p class="pagamento-texto">Até 12x <br />sem juros</p>
+        </div>
+        <div class="swiper-slide pagamento-infos">
+          <img
+            src="./svg/icon-footer-locker.svg"
+            alt="Cadeado"
+            class="pagamento-img"
+          />
+          <p class="pagamento-texto">Compra 100% <br />segura</p>
+        </div>
+        <div class="swiper-slide pagamento-infos">
+          <img
+            src="./svg/icon-footer-box.svg"
+            alt="Caxia"
+            class="pagamento-img"
+          />
+          <p class="pagamento-texto">Produtos de alta <br />qualidade</p>
+        </div>
+        <div class="swiper-slide pagamento-infos">
+          <img
+            src="./svg/icon-footer-pix.svg"
+            alt="Pix"
+            class="pagamento-img"
+          />
+          <p class="pagamento-texto">5% de desconto <br />no PIX</p>
+        </div>
+      </div>
+      <div class="pagamento-rolagem"></div>
+    </section>
+    <footer class="rodape">
+      <div class="rodape-logo">
+        <img
+          src="./svg/logo-header-wecode.svg"
+          alt="Logo WeCode"
+          class="rodape-logo-img"
+        />
+      </div>
+      <section class="rodape-newsletter">
+        <p class="rodape-newsletter-underline">Newsletter</p>
+        <p class="rodape-newsletter-text">
+          Receba nossas novidades e ofertas através da nossa newsletter
+        </p>
+        <div class="rodape-email">
+          <input
+            type="text"
+            placeholder="Digite seu e-mail"
+            class="rodape-email-input"
+          />
+          <button class="rodape-email-btn">
+            <img src="./svg/icon-footer-mail.svg" alt="" />
+          </button>
+        </div>
+      </section>
+      <section class="rodape-redes">
+        <div class="rodape-redes-texto"><p>Siga nossas redes sociais</p></div>
+        <div class="rodape-redes-img">
+          <img src="./svg/icon-footer-instagram.svg" alt="Instagram" />
+          <img src="./svg/icon-footer-twitter.svg" alt="Twitter" />
+          <img src="./svg/icon-footer-facebook.svg" alt="Facebook" />
+        </div>
+      </section>
+      <section class="rodape-menu">
+        <ul>
+          <li class="rodape-menu-item">
+            <a href="#" class="rodape-menu-item-texto">Sobre Nós </a
+            ><img
+              src="./svg/add-line.svg"
+              alt="Mais"
+              class="rodape-menu-btn-abre-sobre"
+            />
+            <img
+              src="./svg/subtract-line.svg"
+              alt="Menos"
+              class="rodape-menu-btn-fecha-sobre"
+            />
+            <ul class="rodape-menu-sublista-sobre">
+              <li class="rodape-menu-subitens">
+                <a href="#" class="rodape-menu-subitens-texto"
+                  >Quem somos nós</a
+                >
+              </li>
+              <li class="rodape-menu-subitens">
+                <a href="#" class="rodape-menu-subitens-texto">Nosso grupo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="rodape-menu-item">
+            <a href="#" class="rodape-menu-item-texto">Minha Conta</a
+            ><img
+              src="./svg/add-line.svg"
+              alt="Mais"
+              class="rodape-menu-btn-abre-conta"
+            /><img
+              src="./svg/subtract-line.svg"
+              alt="Menos"
+              class="rodape-menu-btn-fecha-conta"
+            />
+            <ul class="rodape-menu-sublista-conta">
+              <li class="rodape-menu-subitens">
+                <a href="#" class="rodape-menu-subitens-texto">Meu perfil</a>
+              </li>
+              <li class="rodape-menu-subitens">
+                <a href="#" class="rodape-menu-subitens-texto">Meus pedidos</a>
+              </li>
+            </ul>
+          </li>
+          <li class="rodape-menu-item">
+            <a href="#" class="rodape-menu-item-texto">Políticas</a
+            ><img
+              src="./svg/add-line.svg"
+              alt="Mais"
+              class="rodape-menu-btn-abre-politicas"
+            /><img
+              src="./svg/subtract-line.svg"
+              alt="Menos"
+              class="rodape-menu-btn-fecha-politicas"
+            />
+            <ul class="rodape-menu-sublista-politicas">
+              <li class="rodape-menu-subitens">
+                <a href="#" class="rodape-menu-subitens-texto"
+                  >Políticas de trocas de devolução</a
+                >
+              </li>
+              <li class="rodape-menu-subitens">
+                <a href="#" class="rodape-menu-subitens-texto"
+                  >Políticas de privacidade</a
+                >
+              </li>
+              <li class="rodape-menu-subitens">
+                <a href="#" class="rodape-menu-subitens-texto">Termos de uso</a>
+              </li>
+            </ul>
+          </li>
+          <li class="rodape-menu-item">
+            <a href="#" class="rodape-menu-item-texto">Contato</a
+            ><img
+              src="./svg/add-line.svg"
+              alt="Mais"
+              class="rodape-menu-btn-abre-contato"
+            /><img
+              src="./svg/subtract-line.svg"
+              alt="Menos"
+              class="rodape-menu-btn-fecha-contato"
+            />
+            <ul class="rodape-menu-sublista-contato">
+              <li class="rodape-menu-subitens">
+                <a href="#" class="rodape-menu-subitens-texto"
+                  >Tel.: (54)3028-9452</a
+                >
+              </li>
+              <li class="rodape-menu-subitens">
+                <a href="#" class="rodape-menu-subitens-texto"
+                  >Rua Plácido de Castro, 1063 - Sala 403 - Exposição, Caxias do
+                  Sul - RS, 95084-370</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="certificados">
+        <div><p class="certificados-texto">Certificados & Selos</p></div>
+        <div>
+          <img src="./svg/icon-footer-selo.svg" alt="Certificados e selos" />
+        </div>
+      </section>
+      <section class="endereco">
+        <img src="./svg/icon-footer-logotype.svg" alt="Logo WeCode" />
+        <p class="endereco-texto">
+          © 2021 wecode.digital - e-commerce technology. Todos os direitos
+          reservados. Rua Plácido de Castro, 1063 - Sala 403 - Exposição, Caxias
+          do Sul - RS, 95084-370 Telefone: (54) 3028-9452
+        </p>
+      </section>
+      <section class="rodape-logo-container">
+        <img
+          src="./svg/icon-footer-vtexbywecode.svg"
+          alt=""
+          class="rodape-logo-img"
+        />
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

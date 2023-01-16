@@ -1,0 +1,226 @@
+/*-------------------rodape----------------*/
+.rodape {
+  background-color: var(--main-background);
+}
+
+/*-----------------rodape-logo----------------*/
+
+.rodape-logo {
+  padding: 50px 0 50px 0;
+}
+
+.rodape-logo-img {
+  padding-left: 25px;
+}
+
+/*---------------rodape-newsletter--------------*/
+
+.rodape-newsletter {
+  color: var(--main-text-color);
+  padding: 0 10px 30px 10px;
+}
+
+.rodape-newsletter p {
+  padding-bottom: 10px;
+}
+
+.rodape-newsletter-underline {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.rodape-newsletter-text {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.rodape-email {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0 30px 0;
+}
+
+.rodape-email-input {
+  padding-left: 15px;
+  width: 65%;
+}
+
+.rodape-email-input:focus {
+  outline: none;
+}
+
+.rodape-email-btn {
+  background-color: var(--secundary-background);
+  padding: 10px 40px;
+}
+
+/*-------------------rodape-redes----------------*/
+
+.rodape-redes {
+  padding: 0 10px 50px 10px;
+}
+
+.rodape-redes-texto {
+  color: var(--main-text-color);
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+.rodape-redes-img {
+  display: flex;
+  gap: 20px;
+}
+
+.rodape-redes-img img {
+  cursor: pointer;
+}
+
+/*-------------------rodape-menu----------------*/
+.rodape-menu {
+  padding: 0 10px 50px 10px;
+}
+
+.rodape-menu-item {
+  padding-bottom: 10px;
+}
+
+.rodape-menu-item img {
+  cursor: pointer;
+  float: right;
+  height: 20px;
+  width: 20px;
+}
+
+.rodape-menu-item-texto {
+  color: var(--main-text-color);
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.rodape-menu-subitens {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.rodape-menu-subitens-texto {
+  color: var(--main-text-color);
+  font-size: 14px;
+  line-height: 25px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+/*--------------rodape-menu-botoes---------------*/
+
+.rodape-menu-btn-fecha-sobre {
+  display: none;
+}
+
+.rodape-menu-btn-fecha-sobre.mostra {
+  display: block;
+}
+
+.rodape-menu-btn-fecha-conta {
+  display: none;
+}
+
+.rodape-menu-btn-fecha-conta.mostra {
+  display: block;
+}
+
+.rodape-menu-btn-fecha-politicas {
+  display: none;
+}
+
+.rodape-menu-btn-fecha-politicas.mostra {
+  display: block;
+}
+
+.rodape-menu-btn-fecha-contato {
+  display: none;
+}
+
+.rodape-menu-btn-fecha-contato.mostra {
+  display: block;
+}
+
+.rodape-menu-btn-abre-sobre.fecha {
+  display: none;
+}
+
+.rodape-menu-btn-abre-conta.fecha {
+  display: none;
+}
+
+.rodape-menu-btn-abre-politicas.fecha {
+  display: none;
+}
+
+.rodape-menu-btn-abre-contato.fecha {
+  display: none;
+}
+
+/*-------------rodape-menu-sublistas---------------*/
+
+.rodape-menu ul ul {
+  display: none;
+}
+
+.rodape-menu-sublista-sobre.mostra {
+  display: block;
+}
+
+.rodape-menu-sublista-conta.mostra {
+  display: block;
+}
+
+.rodape-menu-sublista-politicas.mostra {
+  display: block;
+}
+
+.rodape-menu-sublista-contato.mostra {
+  display: block;
+}
+
+/*-----------------rodape-certificados--------------*/
+
+.certificados {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0 20px 0;
+}
+
+.certificados-texto {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.endereco {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px 20px;
+}
+
+.endereco-texto {
+  color: var(--main-text-color);
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.rodape-logo-container {
+  background-color: var(--third-background);
+  padding: 10px 0 5px 0;
+  text-align: center;
+}
+
+.rodape-logo-img {
+  height: 30px;
+  width: 150px;
+}

@@ -1,0 +1,34 @@
+.pagamento-carrossel {
+  padding: 30px 0px 20px 0px;
+  overflow-x: hidden;
+}
+
+.pagamento-container {
+  padding-bottom: 10px;
+}
+
+.pagamento-infos {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.pagamento-img {
+  height: 25px;
+  width: 25px;
+}
+
+.pagamento-texto {
+  font-size: 10px;
+}
+
+.pagamento-rolagem {
+  padding-left: 45%;
+  position: block;
+}
+
+.swiper-pagination-bullets {
+  color: var(--swiper-theme-color);
+}

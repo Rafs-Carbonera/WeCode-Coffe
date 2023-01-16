@@ -1,0 +1,19 @@
+.link-informacao {
+  padding-bottom: 25px;
+}
+
+.link-informacao-banner {
+  margin-bottom: -4px;
+  position: relative;
+}
+
+.link-informacao-banner-link {
+  color: var(--main-text-color);
+  position: absolute;
+  right: 10%;
+  top: 50%;
+}
+
+.link-informacao-banner-img {
+  width: 100%;
+}
