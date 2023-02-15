@@ -40,18 +40,36 @@
   padding: 5px 0 30px 0;
 }
 
-.rodape-email-input {
-  padding-left: 15px;
+.rodape-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  
   width: 65%;
 }
 
-.rodape-email-input:focus {
+.rodape-inputs {
+  padding: 0.3rem;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+.rodape-inputs:focus {
   outline: none;
 }
 
 .rodape-email-btn {
   background-color: var(--secundary-background);
-  padding: 10px 40px;
+  padding: 5px 40px;
+  margin: 25px 45px;
+}
+
+.rodape-email-enviado {
+  display: none;
+}
+
+.rodape-email-enviado.mostra {
+  display: block;
 }
 
 /*-------------------rodape-redes----------------*/

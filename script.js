@@ -121,6 +121,24 @@ const swiperPagamento = new Swiper(".pagamento-carrossel", {
   },
 });
 
+/*------------------------------footer-newsletter--------------------------*/
+
+$(document).ready(function(){
+  $(".rodape-email-btn").click(function(){
+    $(".rodape-email-enviado").toggleClass("mostra");
+  });
+});
+
+// nameVal = $("#name-value").val();
+// $('.rodape-email-enviado.mostra').html((nameVal));
+// emaiVal = $("#email-value").val();
+// $('.rodape-email-enviado.mostra').html((emailVal));
+// telVal = $("#tel-value").val();
+// $('.rodape-email-enviado.mostra').html((telVal));
+
+
+
+
 /*------------------------------footer-menu-------------------------------*/
 
 $(".rodape-menu-btn-abre-sobre").click(function () {
