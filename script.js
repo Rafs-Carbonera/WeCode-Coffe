@@ -59,22 +59,22 @@ const $menuLateral = $(".cabecalho-menu-lateral");
 $(document).mouseup((e) => {
   if (!$menuLateral.is(e.target) && $menuLateral.has(e.target).length === 0) {
     $menuLateral.removeClass("mostra");
-    $(".cabecalho-menu-lateral-primeiro-departamento-lista").removeClass(
-      "mostra"
-    );
-    $(".cabecalho-menu-lateral-segundo-departamento-lista").removeClass(
-      "mostra"
-    );
-    $(".cabecalho-menu-lateral-terceiro-departamento-lista").removeClass(
-      "mostra"
-    );
-    $(".cabecalho-menu-lateral-quarto-departamento-lista").removeClass(
-      "mostra"
-    );
-    $(".cabecalho-menu-lateral-quinto-departamento-lista").removeClass(
-      "mostra"
-    );
-    $(".cabecalho-menu-lateral-sexto-departamento-lista").removeClass("mostra");
+    // $(".cabecalho-menu-lateral-primeiro-departamento-lista").removeClass(
+    //   "mostra"
+    // );
+    // $(".cabecalho-menu-lateral-segundo-departamento-lista").removeClass(
+    //   "mostra"
+    // );
+    // $(".cabecalho-menu-lateral-terceiro-departamento-lista").removeClass(
+    //   "mostra"
+    // );
+    // $(".cabecalho-menu-lateral-quarto-departamento-lista").removeClass(
+    //   "mostra"
+    // );
+    // $(".cabecalho-menu-lateral-quinto-departamento-lista").removeClass(
+    //   "mostra"
+    // );
+    // $(".cabecalho-menu-lateral-sexto-departamento-lista").removeClass("mostra");
   }
 });
 
