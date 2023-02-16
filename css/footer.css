@@ -43,13 +43,12 @@
 .rodape-input {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-  
+  gap: 0.5rem;
   width: 65%;
 }
 
 .rodape-inputs {
-  padding: 0.3rem;
+  padding: 0.4rem;
   border-radius: 5px;
   padding-left: 15px;
 }
@@ -60,8 +59,8 @@
 
 .rodape-email-btn {
   background-color: var(--secundary-background);
-  padding: 5px 40px;
-  margin: 25px 45px;
+  padding: 5px 30px;
+  margin: 30px 45px;
 }
 
 .rodape-email-enviado {
@@ -69,6 +68,14 @@
 }
 
 .rodape-email-enviado.mostra {
+  display: block;
+}
+
+.rodape-email-erro {
+  display: none;
+}
+
+.rodape-email-erro.mostra {
   display: block;
 }
 

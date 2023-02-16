@@ -123,21 +123,34 @@ const swiperPagamento = new Swiper(".pagamento-carrossel", {
 
 /*------------------------------footer-newsletter--------------------------*/
 
-$(document).ready(function(){
-  $(".rodape-email-btn").click(function(){
-    $(".rodape-email-enviado").toggleClass("mostra");
+$(document).ready(function () {
+  $(".rodape-email-btn").click(function () {
+    if ($.trim($(".rodape-inputs").val()) != "") {
+      $(".rodape-email-enviado").toggleClass("mostra");
+    } else {
+      $(".rodape-email-erro").toggleClass("mostra");
+    }
   });
 });
 
-// nameVal = $("#name-value").val();
-// $('.rodape-email-enviado.mostra').html((nameVal));
-// emaiVal = $("#email-value").val();
-// $('.rodape-email-enviado.mostra').html((emailVal));
-// telVal = $("#tel-value").val();
-// $('.rodape-email-enviado.mostra').html((telVal));
-
-
-
+$(function () {
+  $(".rodape-email-btn").on("click", function (event) {
+    event.preventDefault();
+    var name = $("#name-value").val();
+    var email = $("#email-value").val();
+    var telefone = $("#tel-value").val();
+    $("#valores-formulario").html(
+      "Nome: " +
+        name +
+        "<br><br>" +
+        "E-mail: " +
+        email +
+        "<br><br>" +
+        "Telefone: " +
+        telefone
+    );
+  });
+});
 
 /*------------------------------footer-menu-------------------------------*/
 
