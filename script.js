@@ -15,40 +15,12 @@ $(".cabecalho-menu-lateral-sair").click(function () {
 
 /*----------------------------menu-lateral-departamentos--------------------------*/
 
-// $(".cabecalho-menu-lateral-primeiro-departamento").click(function () {
-//   $(".cabecalho-menu-lateral-primeiro-departamento-lista").toggleClass(
-//     "mostra"
-//   );
-// });
-
-// $(".cabecalho-menu-lateral-segundo-departamento").click(function () {
-//   $(".cabecalho-menu-lateral-segundo-departamento-lista").toggleClass("mostra");
-// });
-
-// $(".cabecalho-menu-lateral-terceiro-departamento").click(function () {
-//   $(".cabecalho-menu-lateral-terceiro-departamento-lista").toggleClass(
-//     "mostra"
-//   );
-// });
-
-// $(".cabecalho-menu-lateral-quarto-departamento").click(function () {
-//   $(".cabecalho-menu-lateral-quarto-departamento-lista").toggleClass("mostra");
-// });
-
-// $(".cabecalho-menu-lateral-quinto-departamento").click(function () {
-//   $(".cabecalho-menu-lateral-quinto-departamento-lista").toggleClass("mostra");
-// });
-
-// $(".cabecalho-menu-lateral-sexto-departamento").click(function () {
-//   $(".cabecalho-menu-lateral-sexto-departamento-lista").toggleClass("mostra");
-// });
-
 $(document).ready(function ($) {
   $(".cabecalho-menu-lateral-itens > ul").hide();
   $(".cabecalho-menu-lateral-itens").click(function () {
     $(this).siblings().children("ul").hide("fast");
-    $(this).children("ul").stop(true, true).slideToggle("fast"),
-      $(this).toggleClass("dropdown-active");
+    $(this).children("ul").stop(true, true).slideToggle("fast");
+    $(this).toggleClass("dropdown-active");
   });
 });
 
@@ -59,22 +31,6 @@ const $menuLateral = $(".cabecalho-menu-lateral");
 $(document).mouseup((e) => {
   if (!$menuLateral.is(e.target) && $menuLateral.has(e.target).length === 0) {
     $menuLateral.removeClass("mostra");
-    $(".cabecalho-menu-lateral-primeiro-departamento-lista").removeClass(
-      "mostra"
-    );
-    $(".cabecalho-menu-lateral-segundo-departamento-lista").removeClass(
-      "mostra"
-    );
-    $(".cabecalho-menu-lateral-terceiro-departamento-lista").removeClass(
-      "mostra"
-    );
-    $(".cabecalho-menu-lateral-quarto-departamento-lista").removeClass(
-      "mostra"
-    );
-    $(".cabecalho-menu-lateral-quinto-departamento-lista").removeClass(
-      "mostra"
-    );
-    $(".cabecalho-menu-lateral-sexto-departamento-lista").removeClass("mostra");
   }
 });
 
@@ -134,7 +90,7 @@ const swiperPagamento = new Swiper(".pagamento-carrossel", {
 
 $(document).ready(function () {
   $(".rodape-email-btn").click(function () {
-    if ($.trim($(".rodape-inputs").val()) != "") {
+    if ($(".rodape-inputs").val() != "") {
       $(".rodape-email-enviado").toggleClass("mostra");
     } else {
       $(".rodape-email-erro").toggleClass("mostra");
@@ -158,10 +114,50 @@ $(function () {
         "Telefone: " +
         telefone
     );
+    $(".rodape-input input").val("");
   });
 });
 
 /*------------------------------footer-menu-------------------------------*/
+
+$(document).ready(function ($) {
+  $(".rodape-menu-item > ul").hide();
+  $(".rodape-menu-item").click(function (e) {
+    e.preventDefault();
+    $(".rodape-menu-btn-abre-sobre").each(function () {
+      if ($(".rodape-menu-btn-abre-sobre").text() === "+") {
+        $(".rodape-menu-btn-abre-sobre").text("-");
+      } else {
+        $(".rodape-menu-btn-abre-sobre").text("+");
+      }
+    });
+    $(".rodape-menu-btn-abre-conta").each(function () {
+      if ($(".rodape-menu-btn-abre-conta").text() === "+") {
+        $(".rodape-menu-btn-abre-conta").text("-");
+      } else {
+        $(".rodape-menu-btn-abre-conta").text("+");
+      }
+    });
+    $(".rodape-menu-btn-abre-politicas").each(function () {
+      if ($(".rodape-menu-btn-abre-politicas").text() === "+") {
+        $(".rodape-menu-btn-abre-politicas").text("-");
+      } else {
+        $(".rodape-menu-btn-abre-politicas").text("+");
+      }
+    });
+    $(".rodape-menu-btn-abre-contato").each(function () {
+      if ($(".rodape-menu-btn-abre-contato").text() === "+") {
+        $(".rodape-menu-btn-abre-contato").text("-");
+      } else {
+        $(".rodape-menu-btn-abre-contato").text("+");
+      }
+    });
+
+    $(this).siblings().children("ul").hide("fast");
+    $(this).children("ul").stop(true, true).slideToggle("fast");
+    $(this).toggleClass("dropdown-active");
+  });
+});
 
 // $(".rodape-menu-btn-abre-sobre").click(function () {
 //   $(".rodape-menu-sublista-sobre").toggleClass("mostra");
@@ -175,7 +171,7 @@ $(function () {
 //   $(".rodape-menu-sublista-sobre").removeClass("mostra");
 // });
 
-// /*---------------------------------------------*/
+// // /*---------------------------------------------*/
 
 // $(".rodape-menu-btn-abre-conta").click(function () {
 //   $(".rodape-menu-sublista-conta").toggleClass("mostra");
@@ -189,7 +185,7 @@ $(function () {
 //   $(".rodape-menu-sublista-conta").removeClass("mostra");
 // });
 
-// /*---------------------------------------------*/
+// // /*---------------------------------------------*/
 
 // $(".rodape-menu-btn-abre-politicas").click(function () {
 //   $(".rodape-menu-sublista-politicas").toggleClass("mostra");
@@ -203,7 +199,7 @@ $(function () {
 //   $(".rodape-menu-sublista-politicas").removeClass("mostra");
 // });
 
-// /*---------------------------------------------*/
+// // /*---------------------------------------------*/
 
 // $(".rodape-menu-btn-abre-contato").click(function () {
 //   $(".rodape-menu-sublista-contato").toggleClass("mostra");
@@ -218,12 +214,3 @@ $(function () {
 // });
 
 /*---------------------------------------------*/
-
-$(document).ready(function ($) {
-  $(".rodape-menu-item > ul").hide();
-  $(".rodape-menu-item").click(function () {
-    $(this).siblings().children("ul").hide("fast");
-    $(this).children("ul").stop(true, true).slideToggle("fast"),
-      $(this).toggleClass("dropdown-active");
-  });
-});

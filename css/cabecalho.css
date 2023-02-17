@@ -125,10 +125,6 @@
   padding-left: 50px;
 }
 
-.cabecalho-menu-lateral ul ul.mostra {
-  display: block;
-}
-
 .cabecalho-menu-lateral.mostra {
   left: 0;
 }
