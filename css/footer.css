@@ -141,6 +141,10 @@
 
 /*--------------rodape-menu-botoes---------------*/
 
+.invisivel {
+  display: none;
+}
+
 /* .rodape-menu-btn-fecha-sobre {
   display: none;
 }
