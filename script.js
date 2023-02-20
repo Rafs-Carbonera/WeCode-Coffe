@@ -125,44 +125,13 @@ $(function () {
 /*------------------------------footer-menu-------------------------------*/
 
 $(document).ready(function ($) {
-  $(".rodape-menu-item  ul").hide();
+  $(".rodape-menu-item > ul").hide();
   $(".rodape-menu-item").click(function (e) {
     e.preventDefault();
-    // $(".rodape-menu-item p").toggle();
-
+    $(".rodape-menu-item p").toggle();
     $(this).siblings().children("ul").hide("fast");
-    $(this).children("ul").stop(true, true).slideToggle("fast");
+    $(this).children("ul").slideToggle("fast");
     $(this).toggleClass("dropdown-active");
-
-    $(".rodape-menu-item").click(function () {
-      $(this).siblings().children("ul").hide("fast");
-      $(this).children("ul").toggle("fast");
-      $(this).siblings("ul").toggleClass("invisivel");
-      $(this).children(".rodape-menu-btn-fecha").toggleClass("invisivel");
-      $(this)
-        .children(".rodape-menu-item")
-        .children(".rodape-menu-btn-abre")
-        .toggleClass("invisivel");
-
-      if (
-        $(this)
-          .siblings()
-          .children(".rodape-menu-item")
-          .children(".rodape-menu-btn-abre")
-          .hasClass("invisivel")
-      ) {
-        $(this)
-          .siblings()
-          .children(".rodape-menu-item")
-          .children(".rodape-menu-btn-abre")
-          .removeClass("invisivel");
-        $(this)
-          .siblings()
-          .children(".rodape-menu-item")
-          .children(".rodape-menu-btn-fecha")
-          .addClass("invisivel");
-      }
-    });
   });
 });
 
