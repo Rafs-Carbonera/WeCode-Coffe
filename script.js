@@ -91,7 +91,7 @@ const swiperPagamento = new Swiper(".pagamento-carrossel", {
 
 $(document).ready(function () {
   $(".rodape-email-btn").click(function () {
-    if ($(".rodape-input > input").val() === "") {
+    if ($(".rodape-input > input").val() == "") {
       $(".rodape-email-erro").toggleClass("mostra");
       setTimeout(function () {
         $(".rodape-email-erro").hide("5000");
@@ -105,9 +105,9 @@ $(document).ready(function () {
 $(function () {
   $(".rodape-email-btn").on("click", function (event) {
     event.preventDefault();
-    var name = $("#name-value").val();
-    var email = $("#email-value").val();
-    var telefone = $("#tel-value").val();
+    const name = $("#name-value").val();
+    const email = $("#email-value").val();
+    const telefone = $("#tel-value").val();
     $("#valores-formulario").html(
       "Nome: " +
         name +
@@ -118,6 +118,9 @@ $(function () {
         "Telefone: " +
         telefone
     );
+    setTimeout(function () {
+      $("#valores-formulario").hide("5000");
+    }, 4000);
     $(".rodape-input input").val("");
   });
 });
