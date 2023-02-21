@@ -141,79 +141,9 @@
 
 /*--------------rodape-menu-botoes---------------*/
 
-.rodape-menu-btn-fecha {
+.invisivel {
   display: none;
 }
-
-/* .rodape-menu-btn-fecha-sobre {
-  display: none;
-}
-
-.rodape-menu-btn-fecha-sobre.mostra {
-  display: block;
-}
-
-.rodape-menu-btn-fecha-conta {
-  display: none;
-}
-
-.rodape-menu-btn-fecha-conta.mostra {
-  display: block;
-}
-
-.rodape-menu-btn-fecha-politicas {
-  display: none;
-}
-
-.rodape-menu-btn-fecha-politicas.mostra {
-  display: block;
-}
-
-.rodape-menu-btn-fecha-contato {
-  display: none;
-}
-
-.rodape-menu-btn-fecha-contato.mostra {
-  display: block;
-}
-
-.rodape-menu-btn-abre-sobre.fecha {
-  display: none;
-}
-
-.rodape-menu-btn-abre-conta.fecha {
-  display: none;
-}
-
-.rodape-menu-btn-abre-politicas.fecha {
-  display: none;
-}
-
-.rodape-menu-btn-abre-contato.fecha {
-  display: none;
-} */
-
-/*-------------rodape-menu-sublistas---------------*/
-
-/* .rodape-menu ul ul {
-  display: none;
-} */
-
-/* .rodape-menu-sublista-sobre.mostra {
-  display: block;
-}
-
-.rodape-menu-sublista-conta.mostra {
-  display: block;
-}
-
-.rodape-menu-sublista-politicas.mostra {
-  display: block;
-}
-
-.rodape-menu-sublista-contato.mostra {
-  display: block;
-} */
 
 /*-----------------rodape-certificados--------------*/
 

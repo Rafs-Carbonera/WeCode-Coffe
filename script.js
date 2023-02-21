@@ -19,7 +19,7 @@ $(document).ready(function ($) {
   $(".cabecalho-menu-lateral-itens > ul").hide();
   $(".cabecalho-menu-lateral-itens").click(function () {
     $(this).siblings().children("ul").hide("fast");
-    $(this).children("ul").stop(true, true).slideToggle("fast");
+    $(this).children("ul").slideToggle("fast");
     $(this).toggleClass("dropdown-active");
   });
 });
@@ -128,65 +128,32 @@ $(document).ready(function ($) {
   $(".rodape-menu-item > ul").hide();
   $(".rodape-menu-item").click(function (e) {
     e.preventDefault();
-    $(".rodape-menu-item p").toggle();
     $(this).siblings().children("ul").hide("fast");
     $(this).children("ul").slideToggle("fast");
     $(this).toggleClass("dropdown-active");
+
+    const btnFecha = $(this)
+      .children(".rodape-menu-item-texto")
+      .children(".rodape-menu-btn-fecha ");
+    const btnAbre = $(this)
+      .children(".rodape-menu-item-texto")
+      .children(".rodape-menu-btn-abre ");
+    const comandoMostrar = $(this)
+      .siblings()
+      .children(".rodape-menu-item-texto")
+      .children(".rodape-menu-btn-abre");
+    const comandoEsconder = $(this)
+      .siblings()
+      .children(".rodape-menu-item-texto")
+      .children(".rodape-menu-btn-fecha");
+
+    btnFecha.toggleClass("invisivel");
+    btnAbre.toggleClass("invisivel");
+
+    if (comandoMostrar.hasClass("invisivel")) {
+      comandoMostrar.removeClass("invisivel");
+      $(this);
+      comandoEsconder.addClass("invisivel");
+    }
   });
 });
-
-// $(".rodape-menu-btn-abre-sobre").click(function () {
-//   $(".rodape-menu-sublista-sobre").toggleClass("mostra");
-//   $(".rodape-menu-btn-fecha-sobre").toggleClass("mostra");
-//   $(".rodape-menu-btn-abre-sobre").toggleClass("fecha");
-// });
-
-// $(".rodape-menu-btn-fecha-sobre").click(function () {
-//   $(".rodape-menu-btn-abre-sobre").removeClass("fecha");
-//   $(".rodape-menu-btn-fecha-sobre").removeClass("mostra");
-//   $(".rodape-menu-sublista-sobre").removeClass("mostra");
-// });
-
-// // /*---------------------------------------------*/
-
-// $(".rodape-menu-btn-abre-conta").click(function () {
-//   $(".rodape-menu-sublista-conta").toggleClass("mostra");
-//   $(".rodape-menu-btn-fecha-conta").toggleClass("mostra");
-//   $(".rodape-menu-btn-abre-conta").toggleClass("fecha");
-// });
-
-// $(".rodape-menu-btn-fecha-conta").click(function () {
-//   $(".rodape-menu-btn-abre-conta").removeClass("fecha");
-//   $(".rodape-menu-btn-fecha-conta").removeClass("mostra");
-//   $(".rodape-menu-sublista-conta").removeClass("mostra");
-// });
-
-// // /*---------------------------------------------*/
-
-// $(".rodape-menu-btn-abre-politicas").click(function () {
-//   $(".rodape-menu-sublista-politicas").toggleClass("mostra");
-//   $(".rodape-menu-btn-fecha-politicas").toggleClass("mostra");
-//   $(".rodape-menu-btn-abre-politicas").toggleClass("fecha");
-// });
-
-// $(".rodape-menu-btn-fecha-politicas").click(function () {
-//   $(".rodape-menu-btn-abre-politicas").removeClass("fecha");
-//   $(".rodape-menu-btn-fecha-politicas").removeClass("mostra");
-//   $(".rodape-menu-sublista-politicas").removeClass("mostra");
-// });
-
-// // /*---------------------------------------------*/
-
-// $(".rodape-menu-btn-abre-contato").click(function () {
-//   $(".rodape-menu-sublista-contato").toggleClass("mostra");
-//   $(".rodape-menu-btn-fecha-contato").toggleClass("mostra");
-//   $(".rodape-menu-btn-abre-contato").toggleClass("fecha");
-// });
-
-// $(".rodape-menu-btn-fecha-contato").click(function () {
-//   $(".rodape-menu-btn-abre-contato").removeClass("fecha");
-//   $(".rodape-menu-btn-fecha-contato").removeClass("mostra");
-//   $(".rodape-menu-sublista-contato").removeClass("mostra");
-// });
-
-/*---------------------------------------------*/
