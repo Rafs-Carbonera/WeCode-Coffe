@@ -1,0 +1,21 @@
+$mainTextColor: #fff;
+
+.link-informacao {
+  padding-bottom: 25px;
+}
+
+.link-informacao-banner {
+  margin-bottom: -4px;
+  position: relative;
+
+  .link-informacao-banner-img {
+    width: 100%;
+  }
+
+  .link-informacao-banner-link {
+    color: $mainTextColor;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+  }
+}
